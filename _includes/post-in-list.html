@@ -1,0 +1,5 @@
+<div class="padding negative-margins {% cycle "back-1", "back-2"%}">
+  <h2 class="small-vert-margin"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h2>
+  {% include postmetadata.html post = include.post %}
+  {{ post.excerpt }}
+</div>

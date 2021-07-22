@@ -1,0 +1,49 @@
+$primary-color: #333;
+$accent-color-1: #337;
+$contrast-color-1: #fff;
+$accent-color-1b: #115;
+$accent-color-2: #bbb;
+$contrast-color-2: #000;
+
+$background-page-color: #FFF;
+$background-behind-color: #F4F4F4;
+$background-alternate-color: #EEE;
+
+.back-accent-1 {
+	background-color: $accent-color-1;
+}
+
+.back-accent-1b {
+	background-color: $accent-color-1b;
+}
+
+.back-accent-2 {
+	background-color: $accent-color-2;
+}
+
+.back-contrast-1 {
+	background-color: $contrast-color-1;
+}
+
+.back-contrast-2 {
+	background-color: $contrast-color-2;
+}
+
+.color-accent-1 {
+	color: $accent-color-1;
+}
+
+.color-accent-1b {
+	color: $accent-color-1b;
+}
+
+.color-accent-2 {
+	color: $accent-color-2;
+}
+.color-contrast-1 {
+	color: $contrast-color-1;
+}
+
+.color-contrast-2 {
+	color: $contrast-color-2;
+}

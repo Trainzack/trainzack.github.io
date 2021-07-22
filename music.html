@@ -1,0 +1,10 @@
+---
+layout: default
+title: Staff
+---
+
+<h1>Music</h1>
+
+{% for piece in site.pieces %}
+	{% include post-in-list.html post=piece %}
+{% endfor %}

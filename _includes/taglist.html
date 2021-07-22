@@ -1,0 +1,8 @@
+<div class="tags">
+{% if include.category %}
+<span class="capsule-background color-contrast-1 back-accent-1">{{ include.category }}</span>
+{% endif %}
+{% for tag in include.tags %}
+<span class="capsule-background color-contrast-2 back-accent-2">{% if tag[0] %}{{ tag[0] }}{% else %}{{ tag }}{% endif %}</span>
+{% endfor %}
+</div>

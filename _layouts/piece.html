@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include back.html title="Music" link="/Music.html"%}
+
+<div class="padding">
+<h1 class="no-bottom-margin">{{ page.title }}{% if page.ensemble %} for {{ page.ensemble }}{% endif %}</h1>
+	{% include postmetadata.html post = page %}
+</div>
+
+{{ content }}

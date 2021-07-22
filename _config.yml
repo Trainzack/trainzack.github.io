@@ -1,0 +1,22 @@
+collections:
+    pieces:
+        output: true
+    projects:
+        output: true
+    
+        
+defaults:
+  - scope:
+      path: ""
+      type: "pieces"
+    values:
+      layout: "piece"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article>
+{% include back.html title="Projects" link="/Projects.html"%}
+
+<div class="padding">
+<h1 class="no-bottom-margin">{{ page.title }}</h1>
+	{% include postmetadata.html post = page %}
+</div>
+
+{{ content }}
+</article>

@@ -1,0 +1,144 @@
+
+@import "colors";
+
+$font-stack-title: 'Della Respira', serif;
+$font-stack-heading: 'Merriweather', serif;
+$font-stack-sans: 'Lato', sans-serif;
+
+$base-font-size: 18px;
+
+body {
+
+	padding: 10px;
+	margin: 10px;
+	
+	background-color: $background-behind-color;
+	
+	
+	.title {
+		font-size: 3em;
+		font-family: $font-stack-title;
+		display: inline-block;
+		
+		margin-right: 1em;
+	}
+
+	header {
+		
+		background-color: $accent-color-1;
+		color: $contrast-color-1;
+		
+		nav {
+		
+			font-size: 1em;
+			font-family: $font-stack-heading;
+			/*display: inline-block;*/
+			
+			a {
+				color: $contrast-color-1;
+			}
+			.current {
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+
+	padding-left: calc(100vw - 100%); // Prevent the .page-container from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
+
+	.page-container {
+		background-color: $background-page-color;
+		margin: auto;
+		max-width: 900px;
+		padding: 10px;
+		padding-bottom: 1em;
+		overflow-x: hidden;
+	}
+
+	color: $primary-color;
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font-stack-heading;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	p {
+		text-align: justify;
+		font-size: $base-font-size;
+	}
+	
+	* {
+		font-family: $font-stack-sans;
+	}
+
+	
+	.tags {
+		display: flex;
+		flex-flow: row wrap;
+		
+	}
+	
+	.no-decoration {
+		text-decoration: none;
+	}
+	
+	.capsule-background {
+
+		border-radius: 5px;
+		padding: 2px 5px;
+		margin: 2px;
+	}
+	
+	/* It's not yet time for clickable tags
+	.tag:hover {
+		background-color: $accent-color-1;
+		color: $contrast-color-1;
+	}*/
+	
+	
+	.negative-margins {
+		margin: -10px; /* ugly hack */
+	}
+	
+	.no-bottom-margin {
+		margin: {
+			bottom: 0px;
+		}
+	}
+	
+	.no-top-margin {
+		margin: {
+			top: 0px;
+		}
+	}
+	
+	.small-vert-margin {
+		margin: {
+			bottom: 5px;
+			top: 5px;
+		}
+	}
+	
+	.padding {
+		padding: 10px;
+	}
+	
+	.flexlist {
+	
+		display: flex;
+		flex-flow: row wrap;
+		align-items: baseline;
+	}
+	
+	.back-1 {
+		background-color: $background-alternate-color;
+	}
+	
+	.back-2 {
+		background-color: $background-page-color;
+	}
+	
+}
