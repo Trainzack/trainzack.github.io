@@ -1,0 +1,8 @@
+I"<p>After starting my job search, I realized that I needed a portfolio to showcase all of the projects I’ve worked on. Therefore, I created this website in order to do just that.</p>
+
+<p>I decided to use Jekyll to make this site, in no small part because GitHub strongly suggested it. I’m glad I did, because Jekyll is exactly the tool that I never knew I needed to make static sites. I’ve made websites before in raw HTML and CSS (like the <a href="https://web.archive.org/web/20181118194139/http://www.cpp.edu/~pepband/">CPP Pep Band Website</a>) , but that method gets weighted down with bloat incredibly quickly.</p>
+
+<p>Later, I helped make a video streaming website for my Software Engineering class, and that used Django. I fell in love with Django’s templating system, but requires a dynamic site. That’s why I’m so glad to have found Jekyll.</p>
+
+<p>At the time of writing, this site is still very incomplete. It doesn’t make sense to me to spend any more time improving it before I have anything substantial here.</p>
+:ET
