@@ -28,7 +28,7 @@ body .title { font-size: 3em; font-family: "Della Respira", serif; display: inli
 
 body header { background-color: #337; color: #fff; }
 
-body header nav { font-size: 2em; }
+body header nav { font-size: 1.5em; }
 
 body header nav a { color: #fff; font-family: "Merriweather", serif; text-decoration: none; }
 
@@ -45,6 +45,10 @@ body p, body tr { text-align: justify; font-size: 18px; }
 body .smaller-text { font-size: 16px; }
 
 body * { font-family: "Lato", sans-serif; }
+
+body .card { display: inline-block; width: 320px; height: 440px; }
+
+body .card img { width: 320px; height: 320px; }
 
 body .tags { display: flex; flex-flow: row wrap; }
 
@@ -64,7 +68,19 @@ body .padding { padding: 10px; }
 
 body .flexlist { display: flex; flex-flow: row wrap; align-items: baseline; }
 
-body .flexspread { display: flex; align-items: center; justify-content: space-between; }
+body .flex { display: flex; }
+
+body .flex-center { align-items: center; }
+
+body .flex-item-grow { flex-grow: 1; }
+
+body .flex-column { flex-direction: column; }
+
+body .flex-spread { justify-content: space-between; }
+
+body .flex-wrap { flex-wrap: wrap; }
+
+body .cardlist { display: flex; justify-content: center; }
 
 body .back-1 { background-color: #EEE; }
 

@@ -7,9 +7,19 @@ $font-stack-sans: 'Lato', sans-serif;
 
 $base-font-size: 18px;
 
+
+$page-width: 900px;
+$max-cards-per-row: 2.5;
+
+$padding: 10px;
+
+$card-width: ($page-width / $max-cards-per-row) - $padding * 4;
+
+$card-height: $card-width + 120px;
+
 body {
 
-	padding: 10px;
+	padding: $padding;
 	margin: 10px;
 	
 	background-color: $background-behind-color;
@@ -30,7 +40,7 @@ body {
 		
 		nav {
 		
-			font-size: 2em;
+			font-size: 1.5em;
 			
 			a {
 				color: $contrast-color-1;
@@ -49,8 +59,8 @@ body {
 	.page-container {
 		background-color: $background-page-color;
 		margin: auto;
-		max-width: 900px;
-		padding: 10px;
+		max-width: $page-width;
+		padding: $padding;
 		padding-bottom: 1em;
 		overflow-x: hidden;
 	}
@@ -78,6 +88,18 @@ body {
 		font-family: $font-stack-sans;
 	}
 
+	.card {
+		display: inline-block;
+		width: $card-width;
+		height: $card-height;
+		
+		img {
+			width: $card-width;
+			height: $card-width;
+			
+		}
+		
+	}
 	
 	.tags {
 		display: flex;
@@ -127,7 +149,7 @@ body {
 	}
 	
 	.padding {
-		padding: 10px;
+		padding: $padding;
 	}
 	
 	.flexlist {
@@ -137,11 +159,33 @@ body {
 		align-items: baseline;
 	}
 	
-	.flexspread {
+	.flex {
 		display: flex;
+	}
+	
+	.flex-center {
 		align-items: center;
+	}
+	
+	.flex-item-grow {
+		flex-grow: 1;
+	}
+	
+	.flex-column {
+		flex-direction: column;
+	}
+	
+	.flex-spread {
 		justify-content: space-between;
-		
+	}
+	
+	.flex-wrap {
+		flex-wrap: wrap;
+	}
+	
+	.cardlist {
+		display: flex;
+		justify-content: center;
 	}
 	
 	.back-1 {

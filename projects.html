@@ -1,12 +1,11 @@
 ---
 title: Projects
 ---
-<!--<h1>Tags</h1>
-
-{% include taglist.html tags=site.tags %}-->
 
 <h1>Projects</h1>
 
-{% for post in site.posts %}
-	{% include post-in-list.html post=post %}
+<span class="cardlist flex-wrap">
+{% for project in site.projects %}
+	{% include project-card.html project=project %}
 {% endfor %}
+</span>

@@ -1,0 +1,10 @@
+<div class="padding capsule-background back-shade-1 card flex flex-column flex-spread">
+	
+	<a href="{{ include.project.url }}">
+		<img src="/assets/images/project-cards/{% if include.project.card-image%}{{ include.project.card-image }}{% else %}none.png{% endif %}" alt="Picture demonstrating {{ include.project.title }}">
+		<h2 class="small-vert-margin">{{ include.project.title }}</h2>
+	</a>
+	<p class="no-bottom-margin no-top-margin flex-item-grow">{{ include.project.blurb }}</p>
+	<a class="smaller-text" href="{{ include.project.url }}">See project</a>
+	
+</div>

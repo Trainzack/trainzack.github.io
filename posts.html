@@ -1,0 +1,12 @@
+---
+title: Posts
+---
+<!--<h1>Tags</h1>
+
+{% include taglist.html tags=site.tags %}-->
+
+<h1>Posts</h1>
+
+{% for post in site.posts %}
+	{% include post-in-list.html post=post %}
+{% endfor %}

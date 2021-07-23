@@ -9,22 +9,17 @@ title: Eli Zupke
 </section>
 <section>
 <h1>Contact</h1>
-<table>
-  <tbody>
-    <tr>
-      <td style="text-align: right">Email:</td>
-      <td><a href="mailto:elizupke@gmail.com">elizupke@gmail.com</a></td>
-    </tr>
-    <tr>
-      <td style="text-align: right">LinkedIn:</td>
-      <td><a href="https://www.linkedin.com/in/eli-zupke/">Eli Zupke</a></td>
-    </tr>
-  </tbody>
-</table>
+
+<p>
+	Email: <a href="mailto:elizupke@gmail.com">elizupke@gmail.com</a><br>
+	LinkedIn: <a href="https://www.linkedin.com/in/eli-zupke/">Eli Zupke</a>
+</p>
+
 </section>
 <section>
 <h1>Recent Posts</h1>
   {% for post in site.posts limit:3 %}
 	{% include post-in-list.html post=post %}
   {% endfor %}
+  {% if site.posts.size > 3 %}<p><a href="/blog.html">See all {{ site.posts | size }} posts</a></p>{% endif %}
 </section>

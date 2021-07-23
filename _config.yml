@@ -1,6 +1,4 @@
 collections:
-    pieces:
-        output: true
     projects:
         output: true
     
@@ -8,9 +6,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "pieces"
+      type: "projects"
     values:
-      layout: "piece"
+      layout: "project"
   - scope:
       path: ""
       type: "posts"
