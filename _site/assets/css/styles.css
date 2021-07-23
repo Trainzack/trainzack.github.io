@@ -8,11 +8,15 @@
 
 .back-contrast-2 { background-color: #000; }
 
+.back-shade-1 { background-color: #EEE; }
+
 .color-accent-1 { color: #337; }
 
 .color-accent-1b { color: #115; }
 
 .color-accent-2 { color: #bbb; }
+
+.color-accent-3 { color: #FF7; }
 
 .color-contrast-1 { color: #fff; }
 
@@ -24,11 +28,11 @@ body .title { font-size: 3em; font-family: "Della Respira", serif; display: inli
 
 body header { background-color: #337; color: #fff; }
 
-body header nav { font-size: 1em; font-family: "Merriweather", serif; /*display: inline-block;*/ }
+body header nav { font-size: 2em; }
 
-body header nav a { color: #fff; }
+body header nav a { color: #fff; font-family: "Merriweather", serif; text-decoration: none; }
 
-body header nav .current { font-weight: bold; text-decoration: none; }
+body header nav .current { /*font-weight: bold;*/ color: #FF7; }
 
 body .page-container { background-color: #FFF; margin: auto; max-width: 900px; padding: 10px; padding-bottom: 1em; overflow-x: hidden; }
 
@@ -36,7 +40,9 @@ body h1, body h2, body h3, body h4, body h5, body h6 { font-family: "Merriweathe
 
 body h1 { font-size: 2em; }
 
-body p { text-align: justify; font-size: 18px; }
+body p, body tr { text-align: justify; font-size: 18px; }
+
+body .smaller-text { font-size: 16px; }
 
 body * { font-family: "Lato", sans-serif; }
 
@@ -57,6 +63,8 @@ body .small-vert-margin { margin-bottom: 5px; margin-top: 5px; }
 body .padding { padding: 10px; }
 
 body .flexlist { display: flex; flex-flow: row wrap; align-items: baseline; }
+
+body .flexspread { display: flex; align-items: center; justify-content: space-between; }
 
 body .back-1 { background-color: #EEE; }
 

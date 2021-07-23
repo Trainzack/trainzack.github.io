@@ -30,16 +30,16 @@ body {
 		
 		nav {
 		
-			font-size: 1em;
-			font-family: $font-stack-heading;
-			/*display: inline-block;*/
+			font-size: 2em;
 			
 			a {
 				color: $contrast-color-1;
+				font-family: $font-stack-heading;
+				text-decoration: none;
 			}
 			.current {
-				font-weight: bold;
-				text-decoration: none;
+				/*font-weight: bold;*/
+				color: $accent-color-3;
 			}
 		}
 	}
@@ -65,9 +65,13 @@ body {
 		font-size: 2em;
 	}
 	
-	p {
+	p, tr {
 		text-align: justify;
 		font-size: $base-font-size;
+	}
+	
+	.smaller-text {
+		font-size: $base-font-size - 2px;
 	}
 	
 	* {
@@ -131,6 +135,13 @@ body {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: baseline;
+	}
+	
+	.flexspread {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
 	}
 	
 	.back-1 {

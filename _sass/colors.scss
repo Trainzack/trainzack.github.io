@@ -3,6 +3,7 @@ $accent-color-1: #337;
 $contrast-color-1: #fff;
 $accent-color-1b: #115;
 $accent-color-2: #bbb;
+$accent-color-3: #FF7;
 $contrast-color-2: #000;
 
 $background-page-color: #FFF;
@@ -29,6 +30,10 @@ $background-alternate-color: #EEE;
 	background-color: $contrast-color-2;
 }
 
+.back-shade-1 {
+	background-color: $background-alternate-color;
+}
+
 .color-accent-1 {
 	color: $accent-color-1;
 }
@@ -40,6 +45,11 @@ $background-alternate-color: #EEE;
 .color-accent-2 {
 	color: $accent-color-2;
 }
+
+.color-accent-3 {
+	color: $accent-color-3;
+}
+
 .color-contrast-1 {
 	color: $contrast-color-1;
 }

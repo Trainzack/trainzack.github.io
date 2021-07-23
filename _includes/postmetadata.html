@@ -1,4 +1,4 @@
-<span class="flexlist">
-{% include wikidate.html date = include.post.date %}&nbsp;
+<span class="flexlist smaller-text">
+{{ include.post.date | date_to_string }}&nbsp;
 {% include taglist.html tags = include.post.tags category = include.post.category %}
 </span>
