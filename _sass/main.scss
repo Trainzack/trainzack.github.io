@@ -40,13 +40,19 @@ body {
 		
 		nav {
 		
-			font-size: 1.5em;
+			font-size: 32px;
 			
 			a {
 				color: $contrast-color-1;
 				font-family: $font-stack-heading;
 				text-decoration: none;
 			}
+			
+			a:hover {
+				
+				color: $accent-color-3;
+			}
+			
 			.current {
 				/*font-weight: bold;*/
 				color: $accent-color-3;

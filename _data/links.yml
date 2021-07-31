@@ -1,0 +1,9 @@
+- name: Email
+  link: mailto:elizupke@gmail.com
+  icon: fas fa-envelope-square
+- name: LinkedIn
+  link: https://www.linkedin.com/in/eli-zupke/
+  icon: fab fa-linkedin
+- name: GitHub
+  link: https://github.com/Trainzack
+  icon: fab fa-github-square

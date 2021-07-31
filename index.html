@@ -2,20 +2,11 @@
 title: Eli Zupke
 ---
 
-<section>
+<main>
 
 {% capture home_include %}{% include home_page_text.md %}{% endcapture %}
 {{ home_include | markdownify }}
-</section>
-<section>
-<h1>Contact</h1>
-
-<p>
-	Email: <a href="mailto:elizupke@gmail.com">elizupke@gmail.com</a><br>
-	LinkedIn: <a href="https://www.linkedin.com/in/eli-zupke/">Eli Zupke</a>
-</p>
-
-</section>
+</main>
 <section>
 <h1>Recent Posts</h1>
   {% for post in site.posts limit:3 %}

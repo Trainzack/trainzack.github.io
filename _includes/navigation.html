@@ -1,5 +1,14 @@
 <nav>
-	{% for item in site.data.navigation %}
-		<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>{% unless forloop.last %} |{% endunless %}
-	{% endfor %}
+	<span class="padding">
+		{% for item in site.data.links %}
+			<a href="{{ item.link }}" target="_blank" aria-label="{{ item.name }}" title="{{ item.name }}">
+				<i class="{{ item.icon }}" aria-hidden="true" ></i>
+			</a>
+		{% endfor %}
+	</span>
+	<span class="padding">
+		{% for item in site.data.navigation %}
+			<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>{% unless forloop.last %} |{% endunless %}
+		{% endfor %}
+	</span>
 </nav>
