@@ -3,10 +3,14 @@
 		{{ include.project.date }}&nbsp;
 	{% endif %}{% endcomment %}
 	{% if include.project.github %}
-		<span class="capsule-background back-shade-2">
+		<span>
+		{% comment %}
+			icon-before = "fab fa-github-square"
+			 class="capsule-background back-shade-2"
+			(I'm not sold on the github icon here)
+		{% endcomment %}
 		{% include link-text-icon.html 
 			link = include.project.github
-			icon-before = "fab fa-github-square"
 			text = "see on GitHub"
 			title = "a link to this projecct's GitHub page"
 			class = "novisit"
