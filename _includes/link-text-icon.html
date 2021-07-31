@@ -1,0 +1,9 @@
+<span class="flex flex-center">
+	{% if include.icon-before %}
+	<a href="{{ include.link }}" class="{{ include.class }}" target="{{ include.target }}" aria-hidden="true" tabindex="-1" title="{{ include.title }}"><i class="{{ include.icon-before }}"></i></a>&nbsp;
+	{% endif %}
+	<a href="{{ include.link }}" class="{{ include.class }}" target="{{ include.target }}" title="{{ include.title }}">{{ include.text }}</a>
+	{% if include.icon-after %}
+	&nbsp;<a href="{{ include.link }}" class="{{ include.class }}" target="{{ include.target }}" aria-hidden="true" tabindex="-1" title="{{ include.title }}"><i class="{{ include.icon-after }}"></i></a>
+	{% endif %}
+</span>

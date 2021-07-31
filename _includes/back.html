@@ -1,1 +1,8 @@
-<a href="{{include.link}}"><- back to {{include.title}}</a>
+{% capture back-text %}back to {{ include.title }}{% endcapture %}
+{% include link-text-icon.html 
+	link = include.link
+	icon-before = "far fa-arrow-alt-circle-left"
+	text = back-text
+	title = back-text
+	class = "novisit"
+%}

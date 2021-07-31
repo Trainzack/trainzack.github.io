@@ -1,9 +1,7 @@
 <nav>
 	<span class="padding">
 		{% for item in site.data.links %}
-			<a href="{{ item.link }}" target="_blank" aria-label="{{ item.name }}" title="{{ item.name }}">
-				<i class="{{ item.icon }}" aria-hidden="true" ></i>
-			</a>
+			{% include icon-link.html link = item.link name = item.name icon = item.icon %}
 		{% endfor %}
 	</span>
 	<span class="padding">

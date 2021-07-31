@@ -1,0 +1,24 @@
+{% if include.page.previous %}
+	{% capture prev-text %}previous {{ include.name }}{% endcapture %}
+	
+	{% include link-text-icon.html 
+		link = include.page.previous.url
+		icon-before = "fas fa-long-arrow-alt-left"
+		text = prev-text
+		title = prev-text
+	%}
+{% else %}
+	<span aria-hidden="true"></span>
+{% endif %}
+{% if include.page.next %}
+	{% capture next-text %}next {{ include.name }}{% endcapture %}
+	
+	{% include link-text-icon.html 
+		link = include.page.next.url
+		icon-after = "fas fa-long-arrow-alt-right"
+		text = next-text
+		title = next-text
+	%}
+{% else %}
+	<span aria-hidden="true"></span>
+{% endif %}

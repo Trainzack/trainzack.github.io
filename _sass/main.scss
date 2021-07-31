@@ -4,6 +4,7 @@
 $font-stack-title: 'Della Respira', serif;
 $font-stack-heading: 'Merriweather', serif;
 $font-stack-sans: 'Lato', sans-serif;
+$font-stack-mono: 'Courier Prime', 'Courier', monospace;
 
 $base-font-size: 18px;
 
@@ -67,7 +68,6 @@ body {
 		margin: auto;
 		max-width: $page-width;
 		padding: $padding;
-		padding-bottom: 1em;
 		overflow-x: hidden;
 	}
 
@@ -81,8 +81,15 @@ body {
 		font-size: 2em;
 	}
 	
+	a.novisit:visited, .novisit {
+		color: blue;
+	}
+	
 	p, tr {
 		text-align: justify;
+	}
+	
+	p, tr, .font-size-normal {
 		font-size: $base-font-size;
 	}
 	
@@ -92,6 +99,13 @@ body {
 	
 	* {
 		font-family: $font-stack-sans;
+	}
+	
+	code {
+		font-family: $font-stack-mono;
+		background-color: $background-alternate-color;
+		border-radius: 5px;
+		padding: 0px 5px;
 	}
 
 	.card {
@@ -122,6 +136,16 @@ body {
 		border-radius: 5px;
 		padding: 2px 5px;
 		margin: 2px;
+	}
+	
+	.rounded-border-top {
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	
+	.rounded-border-bottom {
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
 	}
 	
 	/* It's not yet time for clickable tags
@@ -171,6 +195,10 @@ body {
 	
 	.flex-center {
 		align-items: center;
+	}
+	
+	.flex-baseline {
+		align-items: baseline;
 	}
 	
 	.flex-item-grow {

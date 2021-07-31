@@ -1,0 +1,17 @@
+<span class="flexlist font-size-normal">
+	{% comment %}{% if include.project.date %}
+		{{ include.project.date }}&nbsp;
+	{% endif %}{% endcomment %}
+	{% if include.project.github %}
+		<span class="capsule-background back-shade-2">
+		{% include link-text-icon.html 
+			link = include.project.github
+			icon-before = "fab fa-github-square"
+			text = "see on GitHub"
+			title = "a link to this projecct's GitHub page"
+			class = "novisit"
+			target = "_blank"
+		%}
+		</span>
+	{% endif %}
+</span>

@@ -2,6 +2,7 @@
 title: Librario
 blurb: Band library management software.
 card-image: librario.png
+github: https://github.com/Trainzack/Librario
 ---
 
 Some large bands and orchestras have difficulty organizing and distributing their sheet music to their musicians. If done manually, the process of storing, collating, and distributing sheet music is slow and laborious. This increases the costs of running an ensemble, and if resources are limited (as they are in school and community based ensembles) it can can place an artificial limitation on the number of pieces of music the band plays.

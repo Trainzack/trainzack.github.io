@@ -7,7 +7,12 @@ layout: default
 <div class="padding negative-margins no-bottom-margin no-top-margin back-shade-1">
 {% include back.html title="projects" link="/projects.html"%}
 <h1 class="no-bottom-margin no-top-margin">{{ page.title }}</h1>
+	{% include projectmetadata.html project = page %}
 </div>
 
 {{ content }}
+
 </article>
+<nav class="padding negative-margins no-top-margin flex flex-spread back-shade-1">
+	{% include prev-next.html name="project" page=page %}
+</nav>

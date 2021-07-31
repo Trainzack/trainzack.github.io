@@ -2,9 +2,12 @@ $primary-color: #333;
 $accent-color-1: #337;
 $contrast-color-1: #fff;
 $accent-color-1b: #115;
-$accent-color-2: #bbb;
+$accent-color-2: #ccc;
 $accent-color-3: #FF7;
 $contrast-color-2: #000;
+
+$shade-color-1: #EEE;
+$shade-color-2: #D7D7D7;
 
 $background-page-color: #FFF;
 $background-behind-color: #F4F4F4;
@@ -31,29 +34,32 @@ $background-alternate-color: #EEE;
 }
 
 .back-shade-1 {
-	background-color: $background-alternate-color;
+	background-color: $shade-color-1;
+}
+.back-shade-2 {
+	background-color: $shade-color-2;
 }
 
-.color-accent-1 {
+.color-accent-1, a.color-accent-1:visited {
 	color: $accent-color-1;
 }
 
-.color-accent-1b {
+.color-accent-1b, a.color-accent-1b:visited {
 	color: $accent-color-1b;
 }
 
-.color-accent-2 {
+.color-accent-2, a.color-accent-2:visited {
 	color: $accent-color-2;
 }
 
-.color-accent-3 {
+.color-accent-3, a.color-accent-3:visited {
 	color: $accent-color-3;
 }
 
-.color-contrast-1 {
+.color-contrast-1, a.color-contrast-1:visited {
 	color: $contrast-color-1;
 }
 
-.color-contrast-2 {
+.color-contrast-2, a.color-contrast-2:visited {
 	color: $contrast-color-2;
 }
