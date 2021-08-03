@@ -1,0 +1,21 @@
+<!-- _includes/image.html -->
+{% comment %} As from 2.1 in https://stackoverflow.com/a/51682829{% endcomment %}
+<figure>
+    {% if include.url %}
+    <a href="{{ include.url }}">
+    {% endif %}
+    <img
+        {% if include.srcabs %}
+            src="{{ include.srcabs }}"
+        {% else %}
+            src="{{ site.baseurl }}/assets/images/{{ include.src }}"
+        {% endif %}
+    alt="{{ include.alt }}"
+	width="100%">
+    {% if include.url %}
+    </a>
+    {% endif %}
+    {% if include.caption %}
+        <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>

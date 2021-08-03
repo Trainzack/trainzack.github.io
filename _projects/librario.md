@@ -23,7 +23,30 @@ I have begun work on this application, which I have entitled Librario. The goal 
 
 Librario was written in Java 15. Multiple external libraries were used: the graphical user interface was created using JavaFX, while the sheet music processing was written using Apache PDFBox. The top of the data hierarchy is the library. Each library contains a number of other objects: Pieces, Ensembles, and Lists. 
 
-Each piece contains the metadata and sheet music for a particular piece of music. All of the pieces in the library can be viewed on the screen shown in figure 1.1. From there, users can select one or more pieces to edit, export, delete, or add to a list. Ensembles are representations of individual bands that any one band library might serve. Each one contains enough information about the band (generally the number of instruments playing each part) to allow the software to export packets tailored to that band. They can be edited in the ensemble screen, as seen in figure 1.2. Lists are lists of pieces. They allow users to easily group pieces together so that they may be exported into one packet. They can be edited in the list screen, as shown in figure 1.3.
+{% include image.html
+    src="librario/Fig 1.1.png"
+    alt="A screenshot of Librario showing the 'pieces' screen."
+    caption="This screen shows all of the pieces in the user's library. From here, users can select one or more pieces to edit, export, delete, or add to a list."
+%}
+
+Each piece contains the metadata and sheet music for a particular piece of music. 
+
+
+{% include image.html
+    src="librario/Fig 1.2.png"
+    alt="A screenshot of Librario showing the 'ensembles' screen."
+    caption="This screen shows the details of any particular ensemble and allows the user to edit those details."
+%}
+
+Ensembles are representations of individual bands that any one band library might serve. Each one contains enough information about the band (generally the number of instruments playing each part) to allow the software to export packets tailored to that band.
+
+{% include image.html
+    src="librario/Fig 1.3.png"
+    alt="A screenshot of Librario showing the 'list' screen."
+    caption="This screen shows the pieces in any particular list and allows the user to add or remove pieces from the list, rename the list, and reorder the list."
+%}
+
+Lists are lists of pieces. They allow users to easily group pieces together so that they may be exported into one packet.
 
 Users can navigate between the screens using the navigation bar on the left side. This design pattern was used due to its similarities to several popular macOS applications, including iTunes.
 
@@ -33,7 +56,13 @@ The prototype was usability tested with four participants, chosen from a pool of
 
 Each participant was given the same set of instructions and was asked to perform several tasks that exercised each part of the application. No quantitative data was recorded, however qualitative data was collected. This data mostly consisted of the testers’ observations and my own observations of the testers’ actions. The results demonstrated that the overall design was functional as no user failed to complete any task. 
 
-The tests also revealed some areas in need of improvement. The testers encountered a few common difficulties that revealed issues with the user interface design, which I addressed. For example, most testers were confused by the original export screen, so I pared it back to the most useful controls as shown in figure 1.4. 
+{% include image.html
+    src="librario/Fig 1.4.png"
+    alt="A screenshot of Librario showing the 'export' screen."
+    caption="This screen allows the user to control exactly how their pieces are exported to PDF."
+%}
+
+The tests also revealed some areas in need of improvement. The testers encountered a few common difficulties that revealed issues with the user interface design, which I addressed. For example, most testers were confused by the original export screen, so I pared it back to the most useful controls as shown in the above image. 
 
 ## Conclusion and Future Work
 
