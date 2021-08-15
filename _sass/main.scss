@@ -1,5 +1,6 @@
 
 @import "colors";
+@import "house";
 
 $font-stack-title: 'Della Respira', serif;
 $font-stack-heading: 'Merriweather', serif;
@@ -22,38 +23,38 @@ body {
 
 	padding: $padding;
 	margin: 10px;
-	
+
 	background-color: $background-behind-color;
-	
-	
+
+
 	.title {
 		font-size: 3em;
 		font-family: $font-stack-title;
 		display: inline-block;
-		
+
 		margin-right: 1em;
 	}
 
 	header {
-		
+
 		background-color: $accent-color-1;
 		color: $contrast-color-1;
-		
+
 		nav {
-		
+
 			font-size: 32px;
-			
+
 			a {
 				color: $contrast-color-1;
 				font-family: $font-stack-heading;
 				text-decoration: none;
 			}
-			
+
 			a:hover {
-				
+
 				color: $accent-color-3;
 			}
-			
+
 			.current {
 				/*font-weight: bold;*/
 				color: $accent-color-3;
@@ -72,35 +73,35 @@ body {
 	}
 
 	color: $primary-color;
-	
+
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $font-stack-heading;
 	}
-	
+
 	h1 {
 		font-size: 2em;
 	}
-	
+
 	a.novisit:visited, .novisit {
 		color: blue;
 	}
-	
+
 	p, tr {
 		text-align: justify;
 	}
-	
+
 	p, tr, .font-size-normal {
 		font-size: $base-font-size;
 	}
-	
+
 	.smaller-text {
 		font-size: $base-font-size - 2px;
 	}
-	
+
 	* {
 		font-family: $font-stack-sans;
 	}
-	
+
 	code {
 		font-family: $font-stack-mono;
 		background-color: $background-alternate-color;
@@ -112,122 +113,122 @@ body {
 		display: inline-block;
 		width: $card-width;
 		height: $card-height;
-		
+
 		img {
 			width: $card-width;
 			height: $card-width;
-			
+
 		}
-		
+
 	}
-	
+
 	.tags {
 		display: flex;
 		flex-flow: row wrap;
-		
+
 	}
-	
+
 	.no-decoration {
 		text-decoration: none;
 	}
-	
+
 	.capsule-background {
 
 		border-radius: 5px;
 		padding: 2px 5px;
 		margin: 2px;
 	}
-	
+
 	.rounded-border-top {
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
 	}
-	
+
 	.rounded-border-bottom {
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 	}
-	
+
 	/* It's not yet time for clickable tags
 	.tag:hover {
 		background-color: $accent-color-1;
 		color: $contrast-color-1;
 	}*/
-	
-	
+
+
 	.negative-margins {
 		margin: -10px; /* ugly hack */
 	}
-	
+
 	.no-bottom-margin {
 		margin: {
 			bottom: 0px;
 		}
 	}
-	
+
 	.no-top-margin {
 		margin: {
 			top: 0px;
 		}
 	}
-	
+
 	.small-vert-margin {
 		margin: {
 			bottom: 5px;
 			top: 5px;
 		}
 	}
-	
+
 	.padding {
 		padding: $padding;
 	}
-	
+
 	.flexlist {
-	
+
 		display: flex;
 		flex-flow: row wrap;
 		align-items: baseline;
 	}
-	
+
 	.flex {
 		display: flex;
 	}
-	
+
 	.flex-center {
 		align-items: center;
 	}
-	
+
 	.flex-baseline {
 		align-items: baseline;
 	}
-	
+
 	.flex-item-grow {
 		flex-grow: 1;
 	}
-	
+
 	.flex-column {
 		flex-direction: column;
 	}
-	
+
 	.flex-spread {
 		justify-content: space-between;
 	}
-	
+
 	.flex-wrap {
 		flex-wrap: wrap;
 	}
-	
+
 	.cardlist {
 		display: flex;
 		justify-content: center;
 	}
-	
+
 	.back-1 {
 		background-color: $background-alternate-color;
 	}
-	
+
 	.back-2 {
 		background-color: $background-page-color;
 	}
-	
+
 }
