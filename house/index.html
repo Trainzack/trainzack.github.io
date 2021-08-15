@@ -1,0 +1,31 @@
+---
+layout: isolation
+---
+
+<div id="grid">
+
+  <div id="header">
+    <h1>House</h1>
+  </div>
+
+  <div id="controls">
+      <label for="house-color">Paint Color</label>
+      <input type="color" id="house-color" name="Paint Color"
+             value="#FFFFFF">
+  </div>
+
+  <div id="pictures">
+    {% assign image-numbers = "1,2" | split: "," %}
+
+    {% for num in image-numbers %}
+
+    <img src="/house/house{{ num }}.png" class="house-img">
+
+    {% endfor %}
+  </div>
+
+</div>
+
+<script type="text/javascript" src="/house/house.js">
+
+</script>
