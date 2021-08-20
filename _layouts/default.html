@@ -6,24 +6,26 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Lato&family=Merriweather&family=Courier+Prime&display=swap" rel="stylesheet">
-		
+
+		<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+
 		<link rel="stylesheet" href="/assets/css/styles.css">
-		
+
 		{%comment%} fontawesome icons {%endcomment%}
 		<script src="https://kit.fontawesome.com/5957bfbb93.js" crossorigin="anonymous"></script>
-		
+
 		{% include head-favicon.html %}
-		
+
 	</head>
-	<body>		
+	<body>
 		<div class="page-container rounded-border-top">
 
 		<header class="padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top" >
-			<div class="title">Eli Zupke</div> {% include navigation.html %} 
+			<div class="title">Eli Zupke</div> {% include navigation.html %}
 		</header>
-		
+
 		{{ content }}
 		</div>
 	</body>
-	
+
 </html>
