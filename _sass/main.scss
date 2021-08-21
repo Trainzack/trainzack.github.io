@@ -44,7 +44,8 @@ body {
 	header {
 
 		padding-top: $padding;
-		padding-right: $padding;
+		//padding-right: $padding;
+		padding-right: calc(20px - 100vw + 100%); // Prevent the page from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
 
 		border: 0;
 
@@ -55,32 +56,13 @@ body {
 			margin-top:0;
 			padding-top:0;
 
-		}
-
-		#ext-icons {
-
-			margin-inline-end: $padding;
-
-			a {
-				font-size: 30px;
-				margin-inline-end: 5px;
-				color: $header-fore-color;
-
-				&:hover, &:focus {
-					text-decoration: none;
-					color: $shade-color-2;
-				}
-			}
-
 
 		}
-
-
 
 		.button {
 
-		border-top-left-radius: $padding;
-		border-top-right-radius: $padding;
+			border-top-left-radius: $padding;
+			border-top-right-radius: $padding;
 
 			&.current {
 				color: $primary-color;
@@ -88,37 +70,6 @@ body {
 			}
 		}
 	}
-
-
-/*	header {
-
-		background-color: $accent-color-1;
-		color: $white;
-
-		nav {
-
-			font-size: 32px;
-
-			a {
-				color: $white;
-				font-family: $font-stack-heading;
-				text-decoration: none;
-			}
-
-			a:hover {
-
-				color: $accent-color-3;
-			}
-
-			.current {
-				/*font-weight: bold;/
-				color: $accent-color-3;
-			}
-		}
-	}*/
-
-	margin-right: calc(100%-100vw); // Prevent the page from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
-
 
 	color: $primary-color;
 
@@ -157,7 +108,7 @@ body {
 		padding: 0px 5px;
 	}
 
-	.card {
+	.project-card {
 		display: inline-block;
 		width: $card-width;
 		height: $card-height;
@@ -167,7 +118,23 @@ body {
 			height: $card-width;
 
 		}
+	}
+	.card {
+		background-color: $shade-color-1;
+	}
 
+	.list-capsule {
+		$radius: 15px;
+
+		&:first-of-type {
+			border-top-left-radius: $radius;
+			border-top-right-radius: $radius;
+		}
+
+		&:last-of-type {
+			border-bottom-left-radius: $radius;
+			border-bottom-right-radius: $radius;
+		}
 	}
 
 	.tags {
@@ -284,4 +251,23 @@ body {
 		margin-right: var(#{$universal-margin-var});
 	}
 
+}
+
+
+#social-links {
+
+	display: flex;
+	justify-content: center;
+
+
+	a {
+		font-size: 30px;
+		margin-inline-end: 5px;
+		transition: color 0.3s;
+
+		&:hover, &:focus {
+			text-decoration: none;
+			color: lighten($link-color, 10%);
+		}
+	}
 }

@@ -22,8 +22,8 @@
 
 		<div class="container">
 
-			<header class="sticky flex flex-center flex-spread"><!--"padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top"-->
-				<a href="/index.html" class="logo">Eli Zupke</a>
+			<header class="sticky flex"><!--"padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top"-->
+				<span class="flex flex-center"><a href="/index.html" class="logo">Eli Zupke</a></span>
 				{% include navigation.html %}
 			</header>
 
@@ -38,6 +38,19 @@
 
 				<div class="col-sm-12 col-md-2"></div>
 			</div>
+
+			<footer>
+				<div class="row">
+					<div class="col-sm-12 col-md-2"></div>
+
+					<div class="col-sm-12 col-md flex flex-spread flex-center">
+						<span>Eli Zupke &copy;&nbsp;{{ 'now' | date: "%Y" }}</span>
+						{% include social-links.html %}
+					</div>
+
+					<div class="col-sm-12 col-md-2"></div>
+				</div>
+			</footer>
 
 		</div>
 
