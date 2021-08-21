@@ -271,4 +271,9 @@ body {
 		background-color: $background-page-color;
 	}
 
+	.margin-uni {
+		margin-left: var(#{$universal-margin-var});
+		margin-right: var(#{$universal-margin-var});
+	}
+
 }
