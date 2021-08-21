@@ -5,7 +5,7 @@
 		<title>{{ page.title }}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Lato&family=Merriweather&family=Courier+Prime&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Merriweather&family=Courier+Prime&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -22,9 +22,9 @@
 
 		<div class="container">
 
-			<header class="sticky flex"><!--"padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top"-->
-				<span class="flex flex-center"><a href="/index.html" class="logo">Eli Zupke</a></span>
-				{% include navigation.html %}
+			<header class="sticky row"><!--"padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top"-->
+				<span class="col-sm-12 col-md-2 flex flex-center flex-spread"><a href="/index.html" class="logo">Eli Zupke</a></span>
+				<span class="col-sm">{% include navigation.html %}</span>
 			</header>
 
 			<div class="row">

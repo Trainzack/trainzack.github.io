@@ -5,7 +5,6 @@
 
 $font-stack-title: 'Della Respira', serif;
 $font-stack-heading: 'Merriweather', serif;
-$font-stack-sans: 'Lato', sans-serif;
 $font-stack-mono: 'Courier Prime', 'Courier', monospace;
 
 $base-font-size: 18px;
@@ -99,10 +98,6 @@ body {
 
 	.smaller-text {
 		font-size: $base-font-size - 2px;
-	}
-
-	* {
-		font-family: $font-stack-sans;
 	}
 
 	code {
