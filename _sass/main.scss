@@ -32,6 +32,10 @@ body {
 	margin: 10px;
 */
 
+	.center {
+		text-align: center;
+	}
+
 	// We want headings to be closer to the text they relate to than to the text above them.
 
 	h2, h3, h4, h5, h6 {
@@ -110,12 +114,12 @@ body {
 
 	.project-card {
 		display: inline-block;
-		width: $card-width;
-		height: $card-height;
+		background-color: $shade-color-1;
+
+		margin-inline-end: $padding;
 
 		img {
-			width: $card-width;
-			height: $card-width;
+			width:100%;
 
 		}
 	}
