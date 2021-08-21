@@ -1,11 +1,12 @@
 <span>
-  <label for="drawer-control" class="drawer-close"></label>
-{% for item in site.data.links %}
-	{% include icon-link.html link = item.link name = item.name icon = item.icon %}
-{% endfor %}
-{% for item in site.data.navigation %}
-	<a href="{{ item.link }}"
-		class="button{% if page.url == item.link %} current{% endif -%}">
-		{{- item.name }}</a>
-{% endfor %}
+	<span id="ext-icons">
+		{% for item in site.data.links %}
+			{% include icon-link.html link = item.link name = item.name icon = item.icon %}
+		{% endfor %}
+	</span>
+	{% for item in site.data.navigation %}
+		<a href="{{ item.link }}"
+			class="button{% if page.url == item.link %} current{% endif -%}">
+			{{- item.name }}</a>
+	{% endfor %}
 </span>

@@ -3,8 +3,6 @@
 
 @import 'flavors/mini-eli';
 
-@import "house";
-
 $font-stack-title: 'Della Respira', serif;
 $font-stack-heading: 'Merriweather', serif;
 $font-stack-sans: 'Lato', sans-serif;
@@ -46,13 +44,30 @@ body {
 			//font-size: 2em;
 			font-family: $font-stack-title;
 			//display: inline-block;
+			margin-top:0;
+			padding-top:0;
 
 		}
 
-		i {
-			font-size: 32px;
-			color: $header-fore-color;
+		#ext-icons {
+
+			margin-inline-end: $padding;
+
+			a {
+				font-size: 30px;
+				margin-inline-end: 5px;
+				color: $header-fore-color;
+
+				&:hover, &:focus {
+					text-decoration: none;
+					color: $shade-color-2;
+				}
+			}
+
+
 		}
+
+
 
 		.button {
 
