@@ -7,8 +7,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Lato&family=Merriweather&family=Courier+Prime&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
-
 		<link rel="stylesheet" href="/assets/css/styles.css">
 
 		{%comment%} fontawesome icons {%endcomment%}
@@ -18,14 +16,31 @@
 
 	</head>
 	<body>
-		<div class="page-container rounded-border-top">
 
-		<header class="padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top" >
-			<div class="title">Eli Zupke</div> {% include navigation.html %}
-		</header>
 
-		{{ content }}
+
+
+		<div class="container">
+
+			<header class="flex flex-spread"><!--"padding no-bottom-margin negative-margins flex flex-center flex-spread rounded-border-top"-->
+				<a href="/index.html" class="logo">Eli Zupke</a>
+				{% include navigation.html %}
+			</header>
+
+			<div class="row">
+
+				<div class="col-sm-12 col-md-2">
+				</div>
+
+				<div class="col-sm-12 col-md">
+					{{ content }}
+				</div>
+
+				<div class="col-sm-12 col-md-2"></div>
+			</div>
+
 		</div>
+
 	</body>
 
 </html>

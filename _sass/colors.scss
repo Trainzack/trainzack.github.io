@@ -1,15 +1,17 @@
 $primary-color: #333;
 $accent-color-1: #337;
-$contrast-color-1: #fff;
+$white: #fff;
 $accent-color-1b: #115;
 $accent-color-2: #ccc;
 $accent-color-3: #FF7;
 $contrast-color-2: #000;
 $shade-color-1: #EEE;
 $shade-color-2: #D7D7D7;
-$background-page-color: #FFF;
-$background-behind-color: #F4F4F4;
+$background-page-color: #F4F4F4;
 $background-alternate-color: #EEE;
+
+$link-color: #0277bd;
+$link-visted-color: #01579b;
 
 .back-accent-1 {
 	background-color: $accent-color-1;
@@ -24,7 +26,7 @@ $background-alternate-color: #EEE;
 }
 
 .back-contrast-1 {
-	background-color: $contrast-color-1;
+	background-color: $white;
 }
 
 .back-contrast-2 {
@@ -61,7 +63,7 @@ a.color-accent-3:visited {
 
 .color-contrast-1,
 a.color-contrast-1:visited {
-	color: $contrast-color-1;
+	color: $white;
 }
 
 .color-contrast-2,

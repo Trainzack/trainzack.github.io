@@ -1,7 +1,8 @@
 
-@import 'flavors/mini-nord';
-
 @import "colors";
+
+@import 'flavors/mini-eli';
+
 @import "house";
 
 $font-stack-title: 'Della Respira', serif;
@@ -21,33 +22,62 @@ $card-width: ($page-width / $max-cards-per-row) - $padding * 4;
 
 $card-height: $card-width + 120px;
 
+
+.container {
+	padding:0;
+}
+
 body {
 
+/*
 	padding: $padding;
 	margin: 10px;
+*/
 
-	background-color: $background-behind-color;
-
-
-	.title {
-		font-size: 3em;
-		font-family: $font-stack-title;
-		display: inline-block;
-
-		margin-right: 1em;
-	}
 
 	header {
 
+		padding-top: $padding;
+		padding-right: $padding;
+
+		border: 0;
+
+		.logo {
+			//font-size: 2em;
+			font-family: $font-stack-title;
+			//display: inline-block;
+
+		}
+
+		i {
+			font-size: 32px;
+			color: $header-fore-color;
+		}
+
+		.button {
+
+		border-top-left-radius: $padding;
+		border-top-right-radius: $padding;
+
+			&.current {
+				color: $primary-color;
+				background-color: $back-color;
+			}
+		}
+	}
+
+
+/*	header {
+
 		background-color: $accent-color-1;
-		color: $contrast-color-1;
+		color: $white;
 
 		nav {
 
 			font-size: 32px;
 
 			a {
-				color: $contrast-color-1;
+				color: $white;
 				font-family: $font-stack-heading;
 				text-decoration: none;
 			}
@@ -58,21 +88,14 @@ body {
 			}
 
 			.current {
-				/*font-weight: bold;*/
+				/*font-weight: bold;/
 				color: $accent-color-3;
 			}
 		}
-	}
+	}*/
 
-	padding-left: calc(100vw - 100%); // Prevent the .page-container from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
+	margin-right: calc(100%-100vw); // Prevent the page from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
 
-	.page-container {
-		background-color: $background-page-color;
-		margin: auto;
-		max-width: $page-width;
-		padding: $padding;
-		overflow-x: hidden;
-	}
 
 	color: $primary-color;
 
@@ -85,7 +108,7 @@ body {
 	}
 
 	a.novisit:visited, .novisit {
-		color: blue;
+		color: $a-link-color;
 	}
 
 	p, tr {
@@ -154,7 +177,7 @@ body {
 	/* It's not yet time for clickable tags
 	.tag:hover {
 		background-color: $accent-color-1;
-		color: $contrast-color-1;
+		color: $white;
 	}*/
 
 
