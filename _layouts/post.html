@@ -1,18 +1,18 @@
 ---
-layout: default
+layout: default_narrow
 ---
 
 <article>
 
-<div class="padding negative-margins no-bottom-margin no-top-margin back-shade-1">
-{% include back.html title="blog" link="/posts.html"%}
-<h1 class="no-bottom-margin no-top-margin">{{ page.title }}</h1>
-	{% include postmetadata.html post = page %}
+<div>
+	{% include back.html title="blog" link="/posts.html"%}
+	<h1 class="no-bottom-margin no-top-margin">{{ page.title }}</h1>
+		{% include postmetadata.html post = page %}
 </div>
-
+<hr>
 {{ content }}
 </article>
 
-<nav class="padding negative-margins no-top-margin flex flex-spread back-shade-1">
+<div class="padding no-top-margin flex flex-spread">
 	{% include prev-next.html name="post" page=page %}
-</nav>
+</div>

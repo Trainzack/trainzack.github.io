@@ -1,10 +1,10 @@
 
 @import "colors";
-@import "house";
+
+@import 'flavors/mini-eli';
 
 $font-stack-title: 'Della Respira', serif;
 $font-stack-heading: 'Merriweather', serif;
-$font-stack-sans: 'Lato', sans-serif;
 $font-stack-mono: 'Courier Prime', 'Courier', monospace;
 
 $base-font-size: 18px;
@@ -19,57 +19,59 @@ $card-width: ($page-width / $max-cards-per-row) - $padding * 4;
 
 $card-height: $card-width + 120px;
 
+
+.container {
+	padding:0;
+}
+
 body {
 
+/*
 	padding: $padding;
 	margin: 10px;
+*/
 
-	background-color: $background-behind-color;
+	.center {
+		text-align: center;
+	}
 
+	// We want headings to be closer to the text they relate to than to the text above them.
 
-	.title {
-		font-size: 3em;
-		font-family: $font-stack-title;
-		display: inline-block;
+	h2, h3, h4, h5, h6 {
 
-		margin-right: 1em;
+		margin-bottom: 0em;
+		margin-top: 1.5em;
+
 	}
 
 	header {
 
-		background-color: $accent-color-1;
-		color: $contrast-color-1;
+		padding-top: $padding;
+		//padding-right: $padding;
+		padding-right: calc(20px - 100vw + 100%); // Prevent the page from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
 
-		nav {
+		border: 0;
 
-			font-size: 32px;
+		.logo {
+			//font-size: 2em;
+			font-family: $font-stack-title;
+			//display: inline-block;
+			margin-top:0;
+			padding-top:0;
 
-			a {
-				color: $contrast-color-1;
-				font-family: $font-stack-heading;
-				text-decoration: none;
-			}
 
-			a:hover {
+		}
 
-				color: $accent-color-3;
-			}
+		.button {
 
-			.current {
-				/*font-weight: bold;*/
-				color: $accent-color-3;
+			border-top-left-radius: $padding;
+			border-top-right-radius: $padding;
+
+			&.current {
+				color: $primary-color;
+				background-color: $back-color;
 			}
 		}
-	}
-
-	padding-left: calc(100vw - 100%); // Prevent the .page-container from changing position when moving between pages that have or don't have a scrollbar. Thanks stackoverflow! https://stackoverflow.com/a/30293718
-
-	.page-container {
-		background-color: $background-page-color;
-		margin: auto;
-		max-width: $page-width;
-		padding: $padding;
-		overflow-x: hidden;
 	}
 
 	color: $primary-color;
@@ -83,7 +85,7 @@ body {
 	}
 
 	a.novisit:visited, .novisit {
-		color: blue;
+		color: $a-link-color;
 	}
 
 	p, tr {
@@ -98,10 +100,6 @@ body {
 		font-size: $base-font-size - 2px;
 	}
 
-	* {
-		font-family: $font-stack-sans;
-	}
-
 	code {
 		font-family: $font-stack-mono;
 		background-color: $background-alternate-color;
@@ -109,17 +107,33 @@ body {
 		padding: 0px 5px;
 	}
 
-	.card {
+	.project-card {
 		display: inline-block;
-		width: $card-width;
-		height: $card-height;
+		background-color: $shade-color-1;
+
+		margin-inline-end: $padding;
 
 		img {
-			width: $card-width;
-			height: $card-width;
+			width:100%;
 
 		}
+	}
+	.card {
+		background-color: $shade-color-1;
+	}
 
+	.list-capsule {
+		$radius: 15px;
+
+		&:first-of-type {
+			border-top-left-radius: $radius;
+			border-top-right-radius: $radius;
+		}
+
+		&:last-of-type {
+			border-bottom-left-radius: $radius;
+			border-bottom-right-radius: $radius;
+		}
 	}
 
 	.tags {
@@ -152,7 +166,7 @@ body {
 	/* It's not yet time for clickable tags
 	.tag:hover {
 		background-color: $accent-color-1;
-		color: $contrast-color-1;
+		color: $white;
 	}*/
 
 
@@ -231,4 +245,28 @@ body {
 		background-color: $background-page-color;
 	}
 
+	.margin-uni {
+		margin-left: var(#{$universal-margin-var});
+		margin-right: var(#{$universal-margin-var});
+	}
+
+}
+
+
+#social-links {
+
+	display: flex;
+	justify-content: center;
+
+
+	a {
+		font-size: 30px;
+		margin-inline-end: 5px;
+		transition: color 0.3s;
+
+		&:hover, &:focus {
+			text-decoration: none;
+			color: lighten($link-color, 10%);
+		}
+	}
 }

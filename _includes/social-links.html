@@ -1,0 +1,6 @@
+
+<span id="social-links">
+	{% for item in site.data.links %}
+		{% include icon-link.html link = item.link name = item.name icon = item.icon %}
+	{% endfor %}
+</span>

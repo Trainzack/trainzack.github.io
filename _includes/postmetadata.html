@@ -1,4 +1,4 @@
-<span class="flexlist smaller-text">
+<div class="flexlist smaller-text margin-uni">
 	{{ include.post.date | date_to_string }}&nbsp;
-	{% include taglist.html tags = include.post.tags category = include.post.category %}
-</span>
+	{%- include taglist.html tags = include.post.tags category = include.post.category %}
+</div>

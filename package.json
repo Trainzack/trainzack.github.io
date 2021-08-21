@@ -1,0 +1,23 @@
+{
+  "name": "trainzack.github.io",
+  "version": "1.0.0",
+  "description": "This is the repository containing my portfolio website, located at https://trainzack.github.io/. It is a work-in-progress.",
+  "main": "index.js",
+  "dependencies": {
+    "mini.css": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trainzack/trainzack.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trainzack/trainzack.github.io/issues"
+  },
+  "homepage": "https://github.com/Trainzack/trainzack.github.io#readme"
+}
