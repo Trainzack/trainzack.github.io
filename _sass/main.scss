@@ -1,7 +1,4 @@
 
-@import "colors";
-
-@import 'flavors/mini-eli';
 
 $font-stack-title: 'Della Respira', serif;
 $font-stack-heading: 'Merriweather', serif;
@@ -18,6 +15,10 @@ $padding: 10px;
 $card-width: ($page-width / $max-cards-per-row) - $padding * 4;
 
 $card-height: $card-width + 120px;
+
+
+@import "colors";
+@import 'flavors/mini-eli';
 
 
 .container {
@@ -80,24 +81,12 @@ body {
 		font-family: $font-stack-heading;
 	}
 
-	h1 {
-		font-size: 2em;
-	}
-
 	a.novisit:visited, .novisit {
 		color: $a-link-color;
 	}
 
-	p, tr {
-		text-align: justify;
-	}
-
-	p, tr, .font-size-normal {
-		font-size: $base-font-size;
-	}
-
 	.smaller-text {
-		font-size: $base-font-size - 2px;
+		font-size: $base-root-font-size - 2px;
 	}
 
 	code {
