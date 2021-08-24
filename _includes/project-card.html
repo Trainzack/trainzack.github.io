@@ -1,10 +1,13 @@
-<div class="padding card small flex flex-column flex-spread">
+<div class="padding card flex flex-column flex-spread project-card">
 
-	<a href="{{ include.project.url }}">
-		<img src="/assets/images/project-cards/{% if include.project.card-image%}{{ include.project.card-image }}{% else %}none.png{% endif %}" alt="Picture demonstrating {{ include.project.title }}">
-		<h2 class="small-vert-margin">{{ include.project.title }}</h2>
+	<a href="{{ include.project.url }}" class="project-title">
+		<h3 class="small-vert-margin">{{ include.project.title }}</h3>
 	</a>
-	<p class="no-bottom-margin no-top-margin flex-item-grow">{{ include.project.blurb }}</p>
-	<a class="smaller-text margin-uni" href="{{ include.project.url }}">See project</a>
+	<a href="{{ include.project.url }}" class="project-image">
+		<img src="/assets/images/project-cards/{% if include.project.card-image%}{{ include.project.card-image }}{% else %}none.png{% endif %}" alt="Picture demonstrating {{ include.project.title }}">
+	</a>
+
+	<p class="no-bottom-margin no-top-margin flex-item-grow project-blurb">{{ include.project.blurb }}</p>
+	<a class="smaller-text margin-uni project-link" href="{{ include.project.url }}">See project</a>
 
 </div>

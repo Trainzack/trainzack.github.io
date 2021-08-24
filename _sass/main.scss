@@ -224,6 +224,31 @@ body {
 	.cardlist {
 		display: flex;
 		justify-content: center;
+		align-items: stretch;
+	}
+
+	.project-card {
+
+		display: grid;
+		grid-template: "title" auto "image" auto "blurb" 5em "link" auto / auto;
+
+		.project-title {
+			grid-area: "title";
+		}
+
+		.project-image {
+			grid-area: "image";
+		}
+
+		.project-blurb {
+			grid-area: "blurb";
+		}
+
+		.project-link {
+			grid-area: "link";
+		}
+
+
 	}
 
 	.back-1 {
@@ -240,7 +265,6 @@ body {
 	}
 
 }
-
 
 #social-links {
 
