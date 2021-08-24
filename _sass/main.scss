@@ -89,7 +89,7 @@ body {
 		font-size: $base-root-font-size - 2px;
 	}
 
-	code {
+	*:not(pre) > code {
 		font-family: $font-stack-mono;
 		background-color: $background-alternate-color;
 		border-radius: 5px;
