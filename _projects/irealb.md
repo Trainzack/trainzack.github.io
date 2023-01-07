@@ -1,5 +1,5 @@
 ---
-title: Irealb Etudes
+title: Procedurally Generated Etudes
 blurb: I wrote a python script to generate some jazz chord progression etudes.
 card-image: irealb.png
 ---
