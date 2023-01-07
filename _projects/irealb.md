@@ -1,7 +1,7 @@
 ---
 title: Irealb Etudes
-blurb: I wrote a pythong script to generate some jazz chord progression etudes.
-card-image: none.png
+blurb: I wrote a python script to generate some jazz chord progression etudes.
+card-image: irealb.png
 ---
 
 ## Introduction
@@ -14,7 +14,7 @@ The 2-5-1 chord progression has been documented heavily elsewhere, so all I will
 
 ### iReal Pro
 
-[iReal Pro](https://www.irealpro.com/) is an app that plays chord progressions. Convinently, the file format that it uses is just a URL, and they have enough [documentation](https://www.irealpro.com/ireal-pro-file-format) that we can generate our own files. That makes iReal Pro a convienent tool to realize this project.
+[iReal Pro](https://www.irealpro.com/) is an app that plays chord progressions. Conveniently, the file format that it uses is just a URL, and they have enough [documentation](https://www.irealpro.com/ireal-pro-file-format) that we can generate our own files. That makes iReal Pro a convenient tool to realize this project.
 
 ## The Code
 
@@ -46,7 +46,7 @@ The source code for this is almost small enough to post the whole thing, but I'l
 
 ```
 
-The `chords` dict contains, for each key, the seven diatonic 7th chords. Since arrays in python are zero indexed (as they should be!), the idicies of each chord (listed in `chord_ind`) go from 0 to 6. I've encoded the 2-5-1 pattern in the `sequence` list (with a bonus 3-6 thrown in the beginning there). Because of the zero indexing, each chord has one number lower.
+The `chords` dict contains, for each key, the seven diatonic 7th chords. Since arrays in python are zero indexed (as they should be!), the indices of each chord (listed in `chord_ind`) go from 0 to 6. I've encoded the 2-5-1 pattern in the `sequence` list (with a bonus 3-6 thrown in the beginning there). Because of the zero indexing, each chord has one number lower.
 
 We also set up `chord_combos`, which is a list of all combinations of two different diatonic chords. When we select the random chords after the 2-5-1, we will pick an unused combination of chords, so we can ensure a good variety of transitions between chords. We remove the ones in our 2-5-1 progression, because we're going to be practicing those ones quite enough.
 
